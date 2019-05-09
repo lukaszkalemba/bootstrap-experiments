@@ -41,3 +41,7 @@ window.addEventListener('resize', e => {
     modal.firstChild.textContent = modalBoxContent;
   }
 });
+
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});
