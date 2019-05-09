@@ -22,14 +22,19 @@ body {
   margin-top: 1rem;
   font-size: 1.1rem; }
 
-@media (min-width: 1200px) {
-  .tooltip-title {
-    border: 1px solid black;
-    border-radius: 50%;
-    padding: 0.5rem 1.2rem;
-    transition: 0.1s ease-in-out; }
-    .tooltip-title:hover {
-      background-color: #5bc0de; } }
+.tooltip-title {
+  border: none;
+  cursor: default;
+  pointer-events: none; }
+  @media (min-width: 1200px) {
+    .tooltip-title {
+      border: 1px solid black;
+      border-radius: 50%;
+      padding: 0.5rem 1.2rem;
+      transition: 0.1s ease-in-out;
+      pointer-events: auto; }
+      .tooltip-title:hover {
+        background-color: #5bc0de; } }
 
 .text-tooltip {
   font-weight: 700;
