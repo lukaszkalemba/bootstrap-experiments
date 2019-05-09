@@ -42,3 +42,22 @@ $(function() {
 $(function() {
   $('[data-toggle="popover"]').popover();
 });
+
+const form = document.querySelector('.js-form');
+const formBoxContent = form.firstChild.textContent;
+
+window.addEventListener('load', e => {
+  if (window.innerWidth >= 1200) {
+    form.firstChild.textContent = '';
+  } else {
+    form.firstChild.textContent = formBoxContent;
+  }
+});
+
+window.addEventListener('resize', e => {
+  if (window.innerWidth >= 1200) {
+    form.firstChild.textContent = '';
+  } else {
+    form.firstChild.textContent = formBoxContent;
+  }
+});
