@@ -18,7 +18,7 @@ gulp.task('js', function() {
       'node_modules/bootstrap/dist/js/bootstrap.min.js',
       'node_modules/jquery/dist/jquery.min.js',
       'node_modules/popper.js/dist/umd/popper.min.js',
-      'src/js/slider.js'
+      'src/js/index.js'
     ])
     .pipe(gulp.dest('src/js/dist'))
     .pipe(browserSync.stream());
