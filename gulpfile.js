@@ -17,9 +17,10 @@ gulp.task('js', function() {
     .src([
       'node_modules/bootstrap/dist/js/bootstrap.min.js',
       'node_modules/jquery/dist/jquery.min.js',
-      'node_modules/popper.js/dist/umd/popper.min.js'
+      'node_modules/popper.js/dist/umd/popper.min.js',
+      'src/js/slider.js'
     ])
-    .pipe(gulp.dest('src/js'))
+    .pipe(gulp.dest('src/js/dist'))
     .pipe(browserSync.stream());
 });
 
@@ -35,6 +36,9 @@ gulp.task(
       ['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'],
       gulp.series('sass')
     );
+
+    gulp.watch(['src/js/*', 'src/js/dist'], gulp.series('js'));
+
     gulp.watch('src/*.html').on('change', browserSync.reload);
   })
 );
