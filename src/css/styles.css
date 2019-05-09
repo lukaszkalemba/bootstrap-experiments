@@ -39,3 +39,17 @@ body {
 .text-tooltip {
   font-weight: 700;
   text-decoration: underline; }
+
+.popover-number {
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.7); }
+  @media (min-width: 1200px) {
+    .popover-number {
+      pointer-events: auto;
+      border: 1px solid rgba(0, 0, 0, 0.7);
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px; }
+      .popover-number:hover {
+        color: rgba(0, 0, 0, 0.7);
+        text-decoration: none;
+        background-color: #56a1b8; } }

@@ -53,3 +53,21 @@ body {
   font-weight: 700;
   text-decoration: underline;
 }
+
+.popover-number {
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.7);
+
+  @media (min-width: 1200px) {
+    pointer-events: auto;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+      text-decoration: none;
+      background-color: rgb(86, 161, 184);
+    }
+  }
+}
