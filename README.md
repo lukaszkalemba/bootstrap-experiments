@@ -4,7 +4,7 @@ An example project using bootstrap installed via npm.
 
 ### Start developing
 
-    To run the project just type "gulp" in your command line.
+To run the project just type "gulp" in your command line.
 
 Installed packages:
 
