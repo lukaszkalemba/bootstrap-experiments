@@ -5,14 +5,15 @@ body {
   color: rgba(0, 0, 0, 0.7); }
 
 .box {
-  font-size: 2rem;
-  background-color: #16a085; }
-
-.slide-desc {
-  font-size: 1.3rem; }
+  font-size: 2rem; }
+  .box .slide-desc {
+    font-size: 1.3rem; }
+  .box .modal-body {
+    font-size: 0.9rem; }
 
 .card-deck {
   font-size: 1rem; }
 
-.card-img {
+.card-img,
+.modal-img {
   width: 100%; }

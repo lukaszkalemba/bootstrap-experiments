@@ -22,3 +22,22 @@ window.addEventListener('resize', e => {
     cards.firstChild.textContent = cardsBoxContent;
   }
 });
+
+const modal = document.querySelector('.js-modal');
+const modalBoxContent = modal.firstChild.textContent;
+
+window.addEventListener('load', e => {
+  if (window.innerWidth >= 1200) {
+    modal.firstChild.textContent = '';
+  } else {
+    modal.firstChild.textContent = modalBoxContent;
+  }
+});
+
+window.addEventListener('resize', e => {
+  if (window.innerWidth >= 1200) {
+    modal.firstChild.textContent = '';
+  } else {
+    modal.firstChild.textContent = modalBoxContent;
+  }
+});
